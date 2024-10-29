@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ReminderApp</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+    <string name="add_reminder">Add Reminder</string>
+    <string name="save_reminder">Save Reminder</string>
+    <string name="edit_reminder">Edit Reminder</string>
+    <string name="delete_reminder">Delete Reminder</string>
+    <!-- Add more strings as needed -->
+</resources>

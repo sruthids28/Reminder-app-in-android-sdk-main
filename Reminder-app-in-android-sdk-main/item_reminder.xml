@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    card_view:cardCornerRadius="8dp"
+    card_view:cardElevation="4dp"
+    tools:ignore="MissingClass">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Reminder Title -->
+        <TextView
+            android:id="@+id/reminderTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reminder Title"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Reminder Description -->
+        <TextView
+            android:id="@+id/reminderDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:layout_below="@id/reminderTitle"
+            android:layout_marginTop="4dp" />
+
+        <!-- Reminder Date and Time -->
+        <TextView
+            android:id="@+id/reminderDateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date and Time"
+            android:layout_below="@id/reminderDescription"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/purple_500" />
+
+        <!-- Delete Icon -->
+        <ImageView
+            android:id="@+id/imageDelete"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_delete"
+            android:contentDescription="Delete Reminder" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
